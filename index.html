@@ -92,7 +92,7 @@
                                 <ul class="hero-btn-list">
                                     <li class="btn-item">
                                         <button
-                                            class="btn-hero btn-orange"
+                                            class="btn-style btn-orange"
                                             type="button"
                                         >
                                             Buy now
@@ -101,7 +101,7 @@
                                     <li class="btn-item">
                                         <a href="#how-its-made">
                                             <button
-                                                class="btn-hero"
+                                                class="btn-style"
                                                 type="button"
                                             >
                                                 How it`s made
@@ -268,7 +268,7 @@
                                         the benefits
                                     </li>
                                 </ul>
-                                <p class="p-overley p-style"">
+                                <p class="p-overley p-style">
                                     Milk is a white liquid food produced by the
                                     mammary glands of mammals. It is the primary
                                     source of nutrition for young mammals
@@ -302,7 +302,7 @@
                                         the benefits
                                     </li>
                                 </ul>
-                                <p class="p-overley p-style"">
+                                <p class="p-overley p-style">
                                     Almonds, pistachios, and walnuts are some
                                     types of nuts that contain healthy
                                     nutrients. When eaten as part of a
@@ -340,7 +340,7 @@
                                         the benefits
                                     </li>
                                 </ul>
-                                <p class="p-overley p-style"">
+                                <p class="p-overley p-style">
                                     Semi-sweet chocolate has a cocoa solid
                                     content of 35 to 65%. One of the best ways
                                     to gain an understanding of this type of
@@ -372,7 +372,7 @@
                                         the benefits
                                     </li>
                                 </ul>
-                                <p class="p-overley p-style"">
+                                <p class="p-overley p-style">
                                     Cocoa is a natural product obtained from the
                                     fruits of the cocoa tree (Theobroma cacao).
                                     This tropical fruit contains beans, from
@@ -409,7 +409,7 @@
                                         the benefits
                                     </li>
                                 </ul>
-                                <p class="p-overley p-style"">
+                                <p class="p-overley p-style">
                                     Raspberry is a tasty and aromatic berry
                                     plant that is popular all over the world. It
                                     belongs to the pink family and grows in many
@@ -444,7 +444,7 @@
                                         the benefits
                                     </li>
                                 </ul>
-                                <p class="p-overley p-style"">
+                                <p class="p-overley p-style">
                                     Coconut oil is a vegetable oil obtained from
                                     the pulp of the fruit of the coconut palm
                                     (Cocos nucifera). It is widely used in
@@ -780,7 +780,7 @@
                             </p>
                         </li>
                     </ul>
-                    <button class="btn-reviews" type="button">
+                    <button class="btn-reviews" type="button" data-modal-open>
                         Leave a review
                     </button>
                 </div>
@@ -891,7 +891,7 @@
                             />
                         </label>
                         <button
-                            class="btn-footer btn-hero btn-orange"
+                            class="btn-footer btn-style btn-orange"
                             type="submit"
                         >
                             Subscribe
@@ -900,6 +900,113 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-window">
+                <button class="modal-close-btn" type="button" data-modal-close>
+                    <svg class="icon-close" width="28" height="28">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="h-modal">
+                    LEAVE A REVIEW ABOUT
+                    <span class="header-accent">OUR CHOCOLATE</span>
+                </p>
+                <form class="modal-form">
+                    <label for="user-name" class="modal-label">Name</label>
+                    <div class="modal-input-box">
+                        <input
+                            name="user-name"
+                            type="email"
+                            name="user-name"
+                            class="modal-input"
+                            pattern="[A-Za-zА\s]+"
+                        />
+                        <svg class="icon-input" width="24" height="24">
+                            <use href="./images/icons.svg#icon-user"></use>
+                        </svg>
+                        <svg class="icon-input-error" width="24" height="24">
+                            <use href="./images/icons.svg#icon-error"></use>
+                        </svg>
+                    </div>
+                    <label for="user-email" class="modal-label">Email</label>
+                    <div class="modal-input-box">
+                        <input
+                            id="user-email"
+                            type="email"
+                            name="user-email"
+                            class="modal-input"
+                        />
+                        <svg class="icon-input" width="24" height="24">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        <svg class="icon-input-error" width="24" height="24">
+                            <use href="./images/icons.svg#icon-error"></use>
+                        </svg>
+                    </div>
+                    <label for="user-tel" class="modal-label">Phone</label>
+                    <div class="modal-input-box">
+                        <input
+                            id="user-tel"
+                            type="tel"
+                            name="user-tel"
+                            class="modal-input"
+                            maxlength="13"
+                            pattern="[0-9 +]*"
+                        />
+                        <svg class="icon-input" width="24" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        <svg class="icon-input-error" width="24" height="24">
+                            <use href="./images/icons.svg#icon-error"></use>
+                        </svg>
+                    </div>
+                    <label for="feedback" class="modal-label">Comment</label>
+                    <textarea
+                        id="feedback"
+                        class="modal-textarea modal-input"
+                        name="feedback"
+                        placeholder="Enter text"
+                    ></textarea>
+                    <div class="privacy-policy">
+                        <input
+                            class="checkbox visually-hidden"
+                            id="user-privacy"
+                            type="checkbox"
+                            value="true"
+                            name="user-privacy"
+                        />
+                        <label
+                            class="modal-label label-checkbox"
+                            for="user-privacy"
+                        >
+                            <span class="span-checkbox-icon">
+                                <svg
+                                    class="icon-checkbox"
+                                    width="10"
+                                    height="10"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-checkmark"
+                                    ></use>
+                                </svg>
+                            </span>
+                            <div class="privacy-policy-text">
+                                I accept the terms and conditions of the
+                                <a
+                                    class="privacy-policy-link header-accent"
+                                    href=""
+                                >
+                                    Privacy Policy</a
+                                >
+                            </div>
+                        </label>
+                    </div>
+                    <button class="btn-style btn-orange" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
         <script src="./js/script.js"></script>
     </body>
 </html>
