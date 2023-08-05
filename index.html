@@ -19,63 +19,89 @@
         />
         <link rel="stylesheet" href="css/style.css" />
     </head>
+
     <body>
         <header class="header" id="header">
             <div class="header-container container">
-                <nav class="nav-list">
-                    <a href="#header" class="logo">
-                        <div class="logo-text">
-                            <span class="logo-italic">SIMPLY </span>CHOCOLATE
-                        </div>
-                        <svg class="icon-logo" width="24" height="24">
-                            <use href="./images/icons.svg#icon-logo"></use>
-                        </svg>
-                    </a>
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="#header" class="menu-item-link">Home</a>
+                <a href="#header" class="logo">
+                    <div class="logo-text">
+                        <span class="logo-italic">SIMPLY </span>CHOCOLATE
+                    </div>
+                    <svg class="icon-logo" width="24" height="24">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <div class="menu-header">
+                    <nav class="nav-list">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#header" class="menu-item-link"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#how-its-made" class="menu-item-link"
+                                    >How it`s made?</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#reviews" class="menu-item-link"
+                                    >Chocolate is loved</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="" class="social-item-link"
+                                ><svg
+                                    class="icon-social"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#how-its-made" class="menu-item-link"
-                                >How it`s made?</a
-                            >
+                        <li class="social-item">
+                            <a href="" class="social-item-link"
+                                ><svg
+                                    class="icon-social"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#reviews" class="menu-item-link"
-                                >Chocolate is loved</a
-                            >
+                        <li class="social-item">
+                            <a href="" class="social-item-link"
+                                ><svg
+                                    class="icon-social"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="" class="social-item-link"
-                            ><svg class="icon-social" width="24" height="24">
-                                <use
-                                    href="./images/icons.svg#icon-facebook"
-                                ></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-item-link"
-                            ><svg class="icon-social" width="24" height="24">
-                                <use
-                                    href="./images/icons.svg#icon-instagram"
-                                ></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-item-link"
-                            ><svg class="icon-social" width="24" height="24">
-                                <use
-                                    href="./images/icons.svg#icon-twitter"
-                                ></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg class="icon-menu-burger" width="28" height="28">
+                        <use href="./images/icons.svg#icon-menu-mobile"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
@@ -130,6 +156,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="advantages-section">
                 <div class="container advantages-container">
                     <h2 class="visually-hidden"></h2>
@@ -203,6 +230,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="components-section section">
                 <div class="container components-container">
                     <h2 class="header-two">
@@ -459,6 +487,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="how-made-section section" id="how-its-made">
                 <div class="container how-made-container">
                     <h2 class="header-two">
@@ -515,6 +544,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="our-product-section section">
                 <div class="container our-product-container">
                     <h2 class="header-two">
@@ -523,6 +553,8 @@
                     <ul class="our-product-list">
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-1.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -537,6 +569,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-2.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -551,6 +585,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-3.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -565,6 +601,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-4.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -579,6 +617,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-5.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -593,6 +633,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-6.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -607,6 +649,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-7.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -621,6 +665,8 @@
                         </li>
                         <li class="our-product-item">
                             <img
+                                width="230"
+                                height="201"
                                 src="./images/product-8.jpg"
                                 alt=""
                                 class="our-product-image"
@@ -636,6 +682,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="top-sellers-section section">
                 <div class="container top-sellers-container">
                     <h2 class="header-two">
@@ -721,6 +768,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="reviews-section section" id="reviews">
                 <div class="container reviews-container">
                     <h2 class="header-two h-two-reviews">
@@ -786,6 +834,7 @@
                 </div>
             </section>
         </main>
+
         <footer class="footer" id="footer">
             <div class="container footer-container">
                 <div class="footer-top">
@@ -881,10 +930,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <form class="form">
+                    <form class="footer-form">
                         <label class="footer-label" for="subscribe">
                             <input
-                                class="eamil"
+                                class="footer-email"
                                 type="email"
                                 placeholder="Enter your email"
                                 name="subscribe"
@@ -900,6 +949,7 @@
                 </div>
             </div>
         </footer>
+
         <div class="backdrop is-hidden" data-modal>
             <div class="modal-window">
                 <button class="modal-close-btn" type="button" data-modal-close>
@@ -908,15 +958,15 @@
                     </svg>
                 </button>
                 <p class="h-modal">
-                    LEAVE A REVIEW ABOUT
+                    LEAVE A REVIEW <br />ABOUT
                     <span class="header-accent">OUR CHOCOLATE</span>
                 </p>
                 <form class="modal-form">
                     <label for="user-name" class="modal-label">Name</label>
                     <div class="modal-input-box">
                         <input
-                            name="user-name"
-                            type="email"
+                            id="user-name"
+                            type="text"
                             name="user-name"
                             class="modal-input"
                             pattern="[A-Za-zА\s]+"
@@ -974,6 +1024,7 @@
                             type="checkbox"
                             value="true"
                             name="user-privacy"
+                            value="true"
                         />
                         <label
                             class="modal-label label-checkbox"
@@ -990,15 +1041,13 @@
                                     ></use>
                                 </svg>
                             </span>
-                            <div class="privacy-policy-text">
-                                I accept the terms and conditions of the
-                                <a
-                                    class="privacy-policy-link header-accent"
-                                    href=""
-                                >
-                                    Privacy Policy</a
-                                >
-                            </div>
+                            I accept the terms and conditions of the
+                            <a
+                                class="privacy-policy-link header-accent"
+                                href=""
+                            >
+                                Privacy Policy</a
+                            >
                         </label>
                     </div>
                     <button class="btn-style btn-orange" type="submit">
@@ -1007,6 +1056,62 @@
                 </form>
             </div>
         </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="js-close-menu menu-close-btn">
+                <svg class="icon-close-menu" width="28" height="28">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="nav-list">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#header" class="menu-item-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#how-its-made" class="menu-item-link"
+                            >How it`s made?</a
+                        >
+                    </li>
+                    <li class="menu-item">
+                        <a href="#reviews" class="menu-item-link"
+                            >Chocolate is loved</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="" class="social-item-link">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-item-link">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-item-link">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script defer src="./js/mobile-menu.js"></script>
         <script src="./js/script.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
