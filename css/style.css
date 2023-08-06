@@ -491,15 +491,13 @@ a {
     border: none;
     background-color: transparent;
     position: absolute;
-    border: 1px solid var(--white);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.icon-play {
+.play-btn-wrap {
+    border: 1px solid var(--white);
+    border-radius: 50%;
     width: 44px;
     height: 44px;
 }
