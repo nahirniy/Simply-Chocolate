@@ -1143,6 +1143,14 @@ iframe {
         flex-basis: 100%;
         max-width: 336px;
     }
+    .overley-top-sellers-box {
+        background: linear-gradient(
+            161deg,
+            rgba(253, 253, 255, 0.1) 0%,
+            rgba(8, 2, 21, 0) 100%
+        );
+        backdrop-filter: blur(7.5px);
+    }
     .h-two-reviews {
         margin-bottom: 74px;
     }
